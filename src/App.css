@@ -1,38 +1,103 @@
 .App {
   text-align: center;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-image: linear-gradient(
+    to right,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  height: 90px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 100px;
+}
+.header span {
+  font-size: 30px;
+  font-weight: 800;
   color: white;
 }
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 
-.App-link {
-  color: #61dafb;
+  height: 150px;
+  margin-top: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  height: 75px;
+  border: none;
+  border-radius: 35px;
+  font-family: "Poppins", sans-serif;
+  background-color: #efc9fa;
+  color: black;
+  font-weight: 700;
+}
+.location {
+  width: 200px;
+}
+.location-inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+.image {
+  width: 500px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.house {
+  background-color: #b7dbf2;
+  border-radius: 30px;
+  height: 450px;
+}
+.property-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.house-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.deets {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.Dash {
+  width: 200px;
+}
+.search-button {
+  width: 120px;
+}
+.Price {
+  width: 200px;
+}
+.Property {
+  width: 200px;
+}
+.transit {
+  transition: 0.3s ease-in-out;
 }
